@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>{{ page.title }} | {{ site.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href={{ "css/style.css" | relative_url }}>
-	</head>
-	<body>
-		<nav>
-    			<ul>
-        			<li><a href="{{site.baseurl}}">Home</a></li>
-        			<li><a href={{ "blog" | relative_url }}>Blog</a></li>
-    			</ul>
-		</nav>
-		<div class="container">
+---
+layout: default
+---
+<head>
+	<!--<link rel="stylesheet" type="text/css" href={{ "css/style.css" | relative_url }}>-->
+</head>
+<nav>
+	<ul>
+		<li><a href={{ "." | relative_url }}>Home</a></li>
+		<li><a href={{ "blog" | relative_url }}>Blog</a></li>
+	</ul>
+</nav>
+<div class="container">
 
-			{{ content }}
+	{{ content }}
 
-		</div><!-- /.container -->
-		<footer>
-	    		<ul>
-        			<li><a href="https://github.com/cartyrya">github.com/cartyrya</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+</div><!-- /.container -->
+<footer>
+	<ul>
+		<li><a href="https://github.com/cartyrya">github.com/cartyrya</a></li>
+	</ul>
+</footer>
